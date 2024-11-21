@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentos - Acessibilidade na Vida Cotidiana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Acessibilidade na Vida Cotidiana</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="documentos.html">Documentos</a></li>
+                <li><a href="beneficios.html">Benefícios</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <button id="toggle-theme" class="theme-button">🌙</button>
+            <button id="adjust-font-size" class="font-button">
+                <img src="img/pngwing.com.png" alt="Ajustar Tamanho da Fonte" style="width: 24px; height: 24px;">
+            </button>
+            
+        </nav>
+    </header>
+    <main>
+        <section class="documentos">
+            <h2>Arquivos Usados na Criação do Site</h2>
+            <p>
+                Abaixo estão os arquivos usados para a criação deste site. Você pode visualizar ou baixar os documentos 
+                para consultar mais detalhes sobre acessibilidade e as melhores práticas adotadas.
+            </p>
+            <ul>
+                <li>
+                    <a href="/eMAG_CONTEUDISTA_MOD_1.pdf" target="_blank">eMAG Conteudista - Módulo 2 (Visualizar)</a> |
+                    <a href="/eMAG_CONTEUDISTA_MOD_1.pdf" download>Baixar</a>
+                </li>
+                <li>
+                    <a href="/eMAG_CONTEUDISTA_MOD_2.pdf" target="_blank">eMAG Conteudista - Módulo 1 (Visualizar)</a> |
+                    <a href="/eMAG_CONTEUDISTA_MOD_2.pdf" download>Baixar</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Acessibilidade na Vida Cotidiana</p>
+    </footer>
+    <div id="zoom-controls" class="zoom-controls">
+        <label for="font-size-slider">Zoom do Texto: <span id="font-size-value">16px</span></label>
+        <input type="range" id="font-size-slider" min="12" max="32" value="16">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

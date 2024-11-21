@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Acessibilidade na Vida Cotidiana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Acessibilidade na Vida Cotidiana</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="documentos.html">Documentos</a></li>
+                <li><a href="beneficios.html">Benefícios</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <button id="toggle-theme" class="theme-button">🌙</button>
+            <button id="adjust-font-size" class="font-button">
+                <img src="img/pngwing.com.png" alt="Ajustar Tamanho da Fonte" style="width: 24px; height: 24px;">
+            </button>
+            
+        </nav>
+    </header>
+    <main>
+        <section class="sobre-nos">
+            <h3>Por que criar um site acessível?</h3>
+            <p>
+                De acordo com o censo de 2010 do IBGE, cerca de 24% da população brasileira possui algum tipo de deficiência. 
+                Isso significa que milhões de pessoas enfrentam barreiras ao tentar acessar informações e serviços na web. 
+                A acessibilidade digital não apenas permite que esses indivíduos participem ativamente da sociedade digital, 
+                mas também atende a requisitos legais como o Decreto nº 5.296/2004 e a Lei nº 13.146/2015 (Estatuto da Pessoa com Deficiência).
+            </p>
+            <p>
+                Além disso, a acessibilidade beneficia a todos: usuários com conexões lentas, dispositivos móveis ou pouca experiência em tecnologia. 
+                Um site acessível é mais fácil de usar, mais inclusivo e promove a igualdade no acesso à informação e aos serviços.
+            </p>
+            <h3>O que é Acessibilidade?</h3>
+            <p>
+                Acessibilidade na web se refere à prática de criar e adaptar sites, aplicativos e recursos digitais para que 
+                possam ser acessados e utilizados por todas as pessoas, independentemente de suas condições físicas, sensoriais, 
+                cognitivas ou tecnológicas. Isso inclui pessoas com deficiências, como a cegueira, surdez, deficiência intelectual, 
+                mobilidade reduzida, entre outras, mas também abrange indivíduos que enfrentam limitações temporárias, como problemas 
+                de visão devido a iluminação inadequada ou dificuldades para utilizar um mouse por estar com as mãos ocupadas.
+            </p>
+            <p>
+                Para ser acessível, um site deve garantir que seu conteúdo seja perceptível, operável, compreensível e robusto, 
+                conforme os princípios estabelecidos pelas WCAG (Web Content Accessibility Guidelines) e pelo eMAG (Modelo de 
+                Acessibilidade em Governo Eletrônico). Isso pode ser alcançado, por exemplo, através do uso de texto alternativo em 
+                imagens, garantindo contraste adequado entre o texto e o fundo, tornando a navegação possível sem mouse, oferecendo 
+                legendas para vídeos, e muito mais.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Acessibilidade na Vida Cotidiana</p>
+    </footer>
+    <div id="zoom-controls" class="zoom-controls">
+        <label for="font-size-slider">Zoom do Texto: <span id="font-size-value">16px</span></label>
+        <input type="range" id="font-size-slider" min="12" max="32" value="16">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

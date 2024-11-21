@@ -1,0 +1,230 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #A2AD91;
+    color: #3A2D32;
+}
+
+/* Layout principal */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #3A2D32;
+    color: #A2AD91;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    flex: 1; /* Faz o main ocupar o espaço restante */
+    padding: 1.5rem;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #A2AD91;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Seção principal */
+main section {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main section h2 {
+    color: #3A2D32;
+    margin-bottom: 1rem;
+}
+
+main section p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+/* Estilo base */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #A2AD91;
+    color: #3A2D32;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #3A2D32;
+    color: #A2AD91;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 1.5rem;
+}
+.documentos {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.documentos h2 {
+    color: #3A2D32;
+    margin-bottom: 1rem;
+}
+
+.documentos ul {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.documentos ul li {
+    margin-bottom: 1rem;
+}
+
+.documentos ul li a {
+    color: #3A2D32;
+    font-weight: bold;
+}
+
+.documentos ul li a:hover {
+    color: #0056b3;
+}
+
+
+
+
+
+.theme-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #3A2D32;  /* Marrom escuro */
+    color: #A2AD91;  /* Texto em verde claro */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Estilo do modo escuro em todo o body */
+body.dark-mode {
+    background-color: #3A2D32;  /* Marrom escuro */
+    color: #A2AD91;  /* Verde claro */
+}
+
+body.dark-mode header, body.dark-mode footer {
+    background-color: #A2AD91;  /* Verde claro para cabeçalho e rodapé */
+    color: #3A2D32;  /* Marrom escuro para o texto */
+}
+
+body.dark-mode .theme-button {
+    background-color: #A2AD91;  /* Verde claro */
+    color: #3A2D32;  /* Marrom escuro */
+}
+
+body.dark-mode a {
+    color: #A2AD91;  /* Verde claro */
+}
+
+body.dark-mode a:hover {
+    color: #0056b3;  /* Cor de link quando estiver no modo escuro */
+}
+
+/* Estilo do modo escuro na section */
+body.dark-mode section {
+    background-color: #000000;  /* Fundo preto */
+    color: #ffffff;  /* Texto branco */
+}
+
+/* Estilo do modo escuro nos links de navegação */
+body.dark-mode nav ul {
+    background-color: #A2AD91;  /* Verde claro */
+    padding: 1rem;
+}
+
+body.dark-mode nav a {
+    color: #3A2D32;  /* Marrom escuro */
+}
+
+body.dark-mode nav a:hover {
+    color: #fff;  /* Texto branco quando em hover */
+}
+
+/* Estilo do h2 dentro da section quando no modo escuro */
+body.dark-mode section h2 {
+    color: #ffffff;  /* Título h2 em branco no modo escuro */
+}
+/* Estilo do botão de ajuste de zoom */
+.font-button {
+    position: absolute;
+    top: 10px;
+    right: 50px; /* Ajustado para posicionar ao lado do botão de tema */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.font-button img {
+    display: block;
+}
+
+/* Estilo do controle de zoom */
+.zoom-controls {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.zoom-controls label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.zoom-controls input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+}
+
+.zoom-controls span {
+    font-weight: bold;
+}

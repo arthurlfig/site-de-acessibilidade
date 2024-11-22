@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessibilidade na Vida Cotidiana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Site sobre acessibilidade</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="documentos.html">Documentos</a></li>
+                <li><a href="beneficios.html">Benefícios</a></li>
+                <li><a href="ideias.html">Ideias</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+            </ul>
+        </nav>
+        <button id="toggle-theme" class="theme-button">🌙</button>
+        <button id="font-size-button" class="font-button">
+            <img src="img/pngwing.com.png" alt="Ajustar Tamanho da Fonte" style="width: 24px; height: 24px;">
+        </button>
+    </header>
+    <main>
+        <section class="videos">
+            <h2>Vídeos sobre Acessibilidade</h2>
+            <div class="video-container">
+                <section class="video">
+                    <h3>Assista a este vídeo sobre acessibilidade digital:</h3>
+                    <a href="https://www.youtube.com/watch?v=pOmdL9LzDJg" target="_blank">
+                        <img src="https://img.youtube.com/vi/pOmdL9LzDJg/hqdefault.jpg" alt="Acessibilidade na Vida Cotidiana" class="video-thumbnail">
+                    </a>
+                </section>
+                <section class="video">
+                    <h3>Outro vídeo interessante sobre o tema:</h3>
+                    <a href="https://www.youtube.com/watch?v=zWARLxSSDHI" target="_blank">
+                        <img src="https://img.youtube.com/vi/zWARLxSSDHI/hqdefault.jpg" alt="Acessibilidade Digital - Por que é importante?" class="video-thumbnail">
+                    </a>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Site sobre acessibilidade</p>
+    </footer>
+    <div id="zoom-controls" class="zoom-controls">
+        <label for="font-size-slider">Zoom do Texto: <span id="font-size-value">16px</span></label>
+        <input type="range" id="font-size-slider" min="12" max="32" value="16">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

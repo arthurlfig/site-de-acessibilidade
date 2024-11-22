@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideias - Acessibilidade na Vida Cotidiana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Site sobre acessibilidade</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="documentos.html">Documentos</a></li>
+                <li><a href="beneficios.html">Benefícios</a></li>
+                <li><a href="ideias.html" class="active">Ideias</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+            <button id="toggle-theme" class="theme-button">🌙</button>
+            <button id="font-size-button" class="font-button">
+                <img src="img/pngwing.com.png" alt="Ajustar Tamanho da Fonte" style="width: 24px; height: 24px;">
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="ideias">
+            <h2>Ideias sobre Acessibilidade</h2>
+            <p>
+                A acessibilidade é um pilar fundamental na construção de um ambiente digital inclusivo. Abaixo estão duas ideias práticas 
+                que implementamos neste site para tornar a navegação mais acessível e amigável a todos os usuários.
+            </p>
+            <h3>Zoom</h3>
+            <p>
+                O controle de zoom permite que os usuários ajustem o tamanho do texto para melhor conforto visual. Essa funcionalidade é 
+                especialmente útil para:
+            </p>
+            <ul>
+                <li>Usuários com baixa visão, que precisam de fontes maiores para leitura.</li>
+                <li>Pessoas idosas, que frequentemente têm dificuldades em ler textos pequenos.</li>
+                <li>Usuários com dispositivos de tela menor, como smartphones.</li>
+            </ul>
+            <p>
+                A implementação do zoom é uma maneira simples e eficaz de melhorar a usabilidade e garantir que mais pessoas possam 
+                acessar e compreender o conteúdo sem barreiras.
+            </p>
+            <h3>Mudança de Tema</h3>
+            <p>
+                A funcionalidade de mudança de tema oferece a possibilidade de alternar entre os modos claro e escuro. Essa ideia foi 
+                incorporada com os seguintes objetivos:
+            </p>
+            <ul>
+                <li>Reduzir o cansaço visual, especialmente em ambientes com pouca luz, ao usar o modo escuro.</li>
+                <li>Atender preferências individuais de usuários que preferem diferentes níveis de brilho na interface.</li>
+                <li>Ajudar pessoas com fotossensibilidade a navegarem com maior conforto.</li>
+            </ul>
+            <p>
+                A mudança de tema não só melhora a experiência visual, mas também reflete o compromisso com a personalização e a inclusão, 
+                atendendo às necessidades de um público diversificado.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Site sobre acessibilidade</p>
+    </footer>
+    <div id="zoom-controls" class="zoom-controls">
+        <label for="font-size-slider">Zoom do Texto: <span id="font-size-value">16px</span></label>
+        <input type="range" id="font-size-slider" min="12" max="32" value="16">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
